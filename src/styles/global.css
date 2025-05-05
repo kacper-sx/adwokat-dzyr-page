@@ -21,6 +21,7 @@
 
   --color-background: oklch(0.95 0.0131 82.4);
   --color-foreground: oklch(0.33 0.0194 293.64);
+  --color-secondary: oklch(0.63 0.1119 82.78);
   --color-border: oklch(33.68% 0 0);
   --color-accent: oklch(0.3 0.0706 156.99);
 
@@ -59,7 +60,7 @@
 }
 
 @utility px-spaced {
-  @apply px-4 md:px-8 lg:px-12;
+  @apply px-4 md:px-12 lg:px-20;
 }
 
 .double-brand-clip {
@@ -70,6 +71,11 @@
   font-family: "Aboreto", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+.card-gradient {
+  background: hsla(335, 91%, 70%, 1);
+  background: linear-gradient(135deg, hsla(335, 91%, 70%, 1) 15%, hsla(49, 89%, 61%, 1) 100%);
 }
 
 @layer base {

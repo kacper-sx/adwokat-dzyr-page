@@ -21,18 +21,18 @@ export default defineConfig({
           "scroll",
           "mail",
           "hand-heart",
-          "crown",
+          "users",
           "handshake",
           "scale",
           "map-pin",
           "calendar-clock",
           "hand-coins",
           "calendar",
-          "heater",
+          "building-2",
           "server",
-          'air-vent',
-          "battery-charging",
-          "cctv"
+          'fingerprint',
+          "file-chart-column-increasing",
+          "chart-no-axes-combined"
         ],
       },
     }), sitemap()]
