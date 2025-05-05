@@ -1,0 +1,98 @@
+---
+import background from '@/assets/background.svg'
+import P1 from '@/assets/prawnik.avif'
+import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
+---
+
+<section
+  class='grid grid-cols-1 lg:grid-cols-3 gap-8 justify-center w-full px-spaced py-8 xl:py-16 items-center'
+>
+  <div class='flex flex-col gap-6 h-full p-4'>
+    <div class='flex flex-col gap-4'>
+      <h2 class='aboreto-regular text-lg'>
+        Jak przygotować się do spotkania z adwokatem?
+      </h2>
+      <p class='text-sm xl:text-base'>
+        Przed spotkaniem z adwokatem warto dobrze przygotować się do rozmowy,
+        zwłaszcza jeśli sprawa dotyczy konkretnego stanu faktycznego. Należy
+        zastanowić się nad jej szczegółami, ustalić, czy sprawa jest już na
+        etapie sądowym, czy zapadł wyrok oraz kiedy odebrano korespondencję – to
+        ważne ze względu na terminy procesowe. Warto także wcześniej spisać
+        pytania, które chcemy zadać, by w stresie nie zapomnieć o istotnych
+        kwestiach – ułatwi to rozmowę i pozwoli uzyskać bardziej wyczerpującą
+        odpowiedź. Kluczowe jest również przygotowanie dokumentów – ich rodzaj
+        zależy od charakteru sprawy (np. dokumentacja medyczna, akty stanu
+        cywilnego, testament, informacje o majątku). Jeśli dokumentów jest dużo,
+        dobrze uprzedzić o tym adwokata z wyprzedzeniem, by mógł przeznaczyć
+        odpowiednio więcej czasu na ich analizę.
+      </p>
+    </div>
+    <div class='flex flex-col gap-4'>
+      <h2 class='aboreto-regular text-lg'>Ile kosztuje pomoc adwokata?</h2>
+      <p class='text-sm
+        xl:text-base'>
+        Cena jednorazowej porady prawnej zależy od konkretnej kancelarii,
+        dlatego najlepiej zapytać o nią bezpośrednio przed wizytą, by uniknąć
+        niejasności. Warto przy tym pamiętać, że adwokat zazwyczaj nie poda
+        kosztu prowadzenia całej sprawy bez wcześniejszej rozmowy – wycena
+        zależy od stopnia jej skomplikowania i zakresu wymaganych działań,
+        dlatego ustalana jest indywidualnie po zapoznaniu się z sytuacją
+        klienta.
+      </p>
+    </div>
+  </div>
+  <div
+    class='flex relative col-span-1 intersect:animate-fade-in-scale-index intersect-once'
+  >
+    <Image
+      src={P1}
+      alt={'Adwokat w kancelarii adwokackiej.'}
+      loading={'lazy'}
+      fetchpriority={'high'}
+      class={'rounded-2xl w-full object-cover double-brand-clip scale-110'}
+      widths={[400, 600, 800, 1000, 1200, 1600, 2000]}
+      sizes='(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 800px) 800px, (max-width: 1000px) 1000px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (min-width: 1601px) 2000px'
+    />
+  </div>
+  <div class='flex flex-col gap-6 xl:gap-0 xl:justify-between h-full p-4'>
+    <div class='flex flex-col gap-4'>
+      <h2 class='aboreto-regular text-lg'>
+        Dlaczego warto skorzystać z usług kancelarii adwokackiej?
+      </h2>
+      <p class='text-sm xl:text-base'>
+        Profesjonalne doradztwo prawne to realna korzyść dla każdego – pozwala
+        zminimalizować ryzyko kosztownych błędów i naruszeń prawa, oszczędza
+        czas, który można poświęcić na prowadzenie biznesu, oraz zapewnia
+        kompleksowe wsparcie – od prostych konsultacji po opracowanie złożonych
+        strategii. Dodatkowo, korzystając z pomocy prawników, mają Państwo
+        pewność, że udzielane porady są zgodne z najnowszymi przepisami, dzięki
+        ich bieżącej analizie zmian w prawie.
+      </p>
+    </div>
+    <div class='flex flex-col gap-4'>
+      <h2 class='aboreto-regular text-lg'>
+        Czy informacje i dokumenty, które otrzymuje adwokat są bezpieczne?
+      </h2>
+      <p class='text-sm xl:text-base'>
+        Podobnie jak sama rozmowa z adwokatem, wszystkie przekazane informacje i
+        dokumenty objęte są tajemnicą zawodową. Kancelarie zobowiązane są do
+        zachowania pełnej poufności oraz stosowania odpowiednich procedur
+        zabezpieczających dane, co gwarantuje bezpieczeństwo zarówno
+        przekazywanych treści, jak i dokumentacji.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .double-brand-clip {
+    clip-path: none; /* domyślnie brak efektu */
+  }
+
+  @media (min-width: 1280px) {
+    .double-brand-clip {
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+  }
+</style>

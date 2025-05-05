@@ -1,0 +1,57 @@
+---
+import { Image } from 'astro:assets'
+import P1 from '@/assets/adwokatura-white.avif'
+---
+
+<footer
+  id='contact'
+  class='flex flex-col bg-accent gap-8 !text-background px-spaced py-4 items-center justify-center w-full'
+>
+  <div class='flex flex-col xl:flex-row justify-between w-full items-center'>
+    <h2 class='aboreto-regular text-xl xl:text-3xl text-center'>
+      Kancelaria Adwokacka Radosław Dzyr - Kontakt
+    </h2>
+    <a href='/'>
+      <Image src={P1} alt='Logo' class={'w-20 lg:w-26 xl:w-32 object-fill'} />
+    </a>
+  </div>
+  <div
+    class='grid grid-cols-1 aboreto-regular lg:grid-cols-3 lg:justify-between w-full lg:gap-0 gap-8 items-center'
+  >
+    <div class='flex flex-col gap-3'>
+      <p class='text-secondary font-semibold text-base'>Dane kontaktowe</p>
+      <p class='text-xl lg:text-2xl'>+48 503 172 772</p>
+      <p class='text-xl lg:text-2xl'>adwokat.dzyr@wp.pl</p>
+    </div>
+    <div class='flex flex-col gap-3 lg:place-self-center'>
+      <p class='text-secondary font-semibold text-base'>Dane adresowe</p>
+      <p class='text-xl lg:text-2xl'>ul. Brzeska 6</p>
+      <p class='text-xl lg:text-2xl'>21-500 Biała Podlaska</p>
+    </div>
+    <div class='flex flex-col gap-3 lg:place-self-end'>
+      <p class='text-secondary font-semibold text-base'>Pozostałe dane</p>
+      <p class='text-xl lg:text-2xl'>47 1140 2004 0000 3002 5782 9009</p>
+      <p class='text-xl lg:text-2xl'>NIP: 5371701283</p>
+    </div>
+  </div>
+  <iframe
+    src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.181280131941!2d23.118554528622138!3d52.034281976200546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47219139f779730b%3A0xe808a55355125bd1!2sBrzeska%206%2C%2021-500%20Bia%C5%82a%20Podlaska!5e0!3m2!1spl!2spl!4v1746451168998!5m2!1spl!2spl'
+    style='border:0;'
+    allowfullscreen=''
+    loading='lazy'
+    class='w-full h-[20vh] lg:h-[30vh] rounded-2xl'
+    referrerpolicy='no-referrer-when-downgrade'></iframe>
+  <div
+    class='flex flex-col lg:flex-row lg:gap-8 gap-4 justify-between text-base font-medium w-full'
+  >
+    <p>
+      Copyright &copy; {new Date().getFullYear()} Kancelaria Adwokacka Radosław Dzyr
+    </p>
+    <p>
+      Realizacja -
+      <a class='underline underline-offset-3 font-semibold' href=''>
+        kacper-sx
+      </a>
+    </p>
+  </div>
+</footer>
