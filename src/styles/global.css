@@ -84,6 +84,5 @@
     color: var(--color-foreground);
     display: flex;
     flex-direction: column;
-    gap: calc(24px * 3);
   }
 }
