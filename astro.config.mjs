@@ -10,7 +10,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-
+  site: 'https://adwokatdzyr.pl',
   integrations: [icon({
       include: {
         lucide: [
