@@ -60,11 +60,10 @@ import { navData } from '@/components/AppHeader/navData'
 
     // ---
 
-    const btns = document.querySelectorAll(
-      'div#nav-menu button[data-nav-button]',
-    )
-    for (const btn of btns) {
-      btn.addEventListener('click', () => {
+    const links = document.querySelectorAll('#nav-menu a')
+    for (const link of links) {
+      link.addEventListener('click', () => {
+        // Zamknij menu
         trigger.ariaExpanded = 'false'
       })
     }
